@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery Main Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('Image1.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background-color: rgba(217, 235, 244, 0.8);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .title {
+            color: #101ad5;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+            margin-top: 20px;
+        }
+        .card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-size: 30px;
+            color: #000101;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 100px;
+        }
+        .card:nth-child(1) { background-color: #82db6a; }
+        .card:nth-child(2) { background-color: #83ce55; }
+        .card:nth-child(3) { background-color: #e3ed77; }
+        .card:nth-child(4) { background-color: #e3ed77; }
+        .card:nth-child(5) { background-color: #e44f4a; }
+        .card:nth-child(6) { background-color: #e44f4a; }
+        .card:nth-child(7) { background-color: rgb(136, 237, 234); }
+        .card:nth-child(8) { background-color: rgb(136, 237, 234); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2 class="title">Main Dashboard</h2>  
+    </div>
+    <div class="dashboard">
+        <b href="/Battery/Battery deployed.html" class="card">Total Field deployed Batteries (55000 / 100%)</b>
+        <b href="/Battery/Battery TIU connectivity.html.html" class="card">Battery in swap but not communicating (30000 / 55%)</b>
+        <b href="/Battery/Qurantined Battery details.html " class="card">Quarantined Battery details (250 / 0.4%)</b>
+        <b href="/Battery/Battery Upgradation.html " class="card">Pending BP firmware Upgradation SCU (6000 / 11%) TIU (3000 / 6%)</b>
+        <b href="/Battery/Alert monitoring.html " class="card">Alert Monitoring super critical Alerts</b>
+        <b href="/Battery/Battery Unlock.html" class="card">Vehicle Battery Unlock(Service App Summary)</b>
+        <b href="/Battery/battery not in swap.html " class="card">Battery Not in Swap (7500 / 13%)</b>
+        <b href="/Battery/Battery reports.html " class="card">Battery Reports (7500 / 13%)</b>
+    </div>
+</body>
+</html>
